@@ -6,11 +6,11 @@
   <title>Cristian Tomasoni</title>
   <style>
     :root {
-      --bg: #f8fafc;        /* slate-50 */
-      --card: #ffffffcc;   /* white w/ alpha */
-      --text: #0f172a;      /* slate-900 */
-      --muted: #475569;     /* slate-600 */
-      --accent: #2563eb;    /* blue-600 */
+      --bg: #f8fafc;
+      --card: #ffffffcc;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #2563eb;
     }
 
     * {
@@ -32,7 +32,8 @@
 
     .card {
       max-width: 640px;
-      padding: 40px 36px;
+      width: calc(100% - 32px);
+      padding: clamp(24px, 5vw, 40px) clamp(20px, 6vw, 36px);
       border-radius: 20px;
       background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7)), var(--card);
       box-shadow:
@@ -104,3 +105,4 @@
   </main>
 </body>
 </html>
+
